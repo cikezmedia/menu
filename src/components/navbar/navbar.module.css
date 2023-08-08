@@ -1,0 +1,103 @@
+.container {
+  margin: 0 auto;
+  color: var(--secondary-color);
+  position: relative;
+}
+.nav {
+  display: flex;
+  flex-direction: row;
+  padding: 20px 15px;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.navLists {
+  display: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 26px;
+  font-weight: 600;
+  font-family: var(--font-inter);
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+.navLists a,
+.mobileList a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+.navLists a:hover,
+.mobileList a:hover {
+  color: var(--primary-color);
+  transform: scale(1.2);
+}
+.icon {
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+.mobile {
+  display: flex;
+}
+.mobileMenu {
+  position: fixed;
+  height: 100vh;
+  background-color: #e3e8f9;
+  width: 100%;
+  top: 0;
+  transform-origin: top;
+  z-index: 10;
+}
+.menuIcons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  position: absolute;
+  width: 100vw;
+}
+.mobileList {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  font-size: 40px;
+  font-weight: 500;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+  text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 1140px;
+    margin: 0 auto;
+    align-content: center;
+    justify-content: center;
+    padding: 20px 10px;
+    color: #000;
+    position: relative;
+  }
+  .nav {
+    padding: 20px 10px;
+  }
+  .navLists {
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+  }
+  .mobile {
+    display: none;
+  }
+  .logo,
+  .mobile {
+    padding: 0px;
+  }
+  .mobileMenu {
+    display: none;
+  }
+}
