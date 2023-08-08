@@ -1,14 +1,15 @@
 .button {
-  background-color: var(--secondary-color);
+  background-color: var(--yellow-color);
   padding: 18px 40px;
   width: max-content;
   border-radius: 10px;
-  color: #fff;
+  color: var(--secondary-color);
   text-decoration: none;
   font-weight: 600;
   font-size: 18px;
 }
 .button:hover {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
+  color: #fff;
   transition: 0.5s all ease;
 }

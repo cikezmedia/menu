@@ -32,7 +32,7 @@
 }
 .navLists a:hover,
 .mobileList a:hover {
-  color: var(--primary-color);
+  color: var(--yellow-color);
   transform: scale(1.2);
 }
 .icon {

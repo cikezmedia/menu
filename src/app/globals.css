@@ -1,6 +1,7 @@
 :root {
   --primary-color: #639cff;
   --secondary-color: #051a6f;
+  --yellow-color: gold;
 }
 * {
   box-sizing: border-box;
