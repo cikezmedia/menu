@@ -2,7 +2,7 @@
   background: var(--secondary-color);
   width: 100%;
   padding: 40px 0;
-  color: #fff;
+  color: #ddd;
 }
 .footer {
   max-width: 1140px;
@@ -13,8 +13,8 @@
   align-items: center;
   margin: 0 auto;
   padding: 0 20px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 16px;
+  font-weight: 500;
 }
 @media screen and (min-width: 768px) {
   .footer {
