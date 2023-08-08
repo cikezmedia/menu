@@ -15,6 +15,7 @@ const Card = () => {
               src='/education.svg'
               alt='Education'
               fill={true}
+              priority
               className={styles.image}
             />
           </div>
@@ -35,6 +36,7 @@ const Card = () => {
               src='/online.svg'
               alt='Online'
               fill={true}
+              priority
               className={styles.image}
             />
           </div>
@@ -55,6 +57,7 @@ const Card = () => {
               src='/mobile.svg'
               alt='Mobile'
               fill={true}
+              priority
               className={styles.image}
             />
           </div>
