@@ -6,7 +6,7 @@
 .nav {
   display: flex;
   flex-direction: row;
-  padding: 20px 15px;
+  padding: 15px 15px;
   align-content: center;
   justify-content: space-between;
   align-items: center;
@@ -62,8 +62,8 @@
 .mobileList {
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  font-size: 40px;
+  gap: 30px;
+  font-size: 50px;
   font-weight: 500;
   justify-content: center;
   align-items: center;
@@ -78,12 +78,11 @@
     margin: 0 auto;
     align-content: center;
     justify-content: center;
-    padding: 20px 10px;
     color: #000;
     position: relative;
   }
   .nav {
-    padding: 20px 10px;
+    padding: 15px 10px;
   }
   .navLists {
     display: flex;

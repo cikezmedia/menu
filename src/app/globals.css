@@ -2,6 +2,7 @@
   --primary-color: #639cff;
   --secondary-color: #051a6f;
   --yellow-color: gold;
+  --light-color: #e3e8f9;
 }
 * {
   box-sizing: border-box;

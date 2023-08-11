@@ -1,0 +1,11 @@
+.svgCurve {
+  position: absolute;
+  top: 0;
+  right: -100px;
+  width: 100px;
+  height: 100%;
+  fill: rgb(227, 232, 249);
+  stroke: none;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}

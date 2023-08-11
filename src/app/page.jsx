@@ -1,3 +1,4 @@
+'use client';
 import NavBar from '@/components/navbar/NavBar';
 import styles from './page.module.css';
 import Hero from '@/components/hero/Hero';

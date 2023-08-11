@@ -29,6 +29,8 @@ const NavBar = () => {
       transition: {
         duration: 0.9,
         ease: [0.12, 0, 0.39, 0],
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
       },
     },
     exit: {
@@ -38,6 +40,22 @@ const NavBar = () => {
         ease: [0.12, 0, 0.39, 1],
       },
     },
+  };
+
+  const moveUp = {
+    initial: {
+      y: 50,
+    },
+    animate: (i) => ({
+      y: 0,
+      transition: {
+        duration: 2,
+        staggerChildren: 0.1,
+        delayChildren: 0.3,
+        ease: [0.76, 0, 0.24, 1],
+        delay: 0.2 * i,
+      },
+    }),
   };
   return (
     <div className={styles.container}>
@@ -92,13 +110,18 @@ const NavBar = () => {
                 />
               </div>
             </div>
-            <div className={styles.mobileList}>
-              {navLinks.map((menu) => (
-                <Link href={menu.url} key={menu.id}>
+            <motion.div
+              variants={moveUp}
+              initial='initial'
+              animate='animate'
+              className={styles.mobileList}
+            >
+              {navLinks.map((menu, index) => (
+                <Link href={menu.url} custom={index} key={menu.id}>
                   {menu.title}
                 </Link>
               ))}
-            </div>
+            </motion.div>
           </motion.div>
         )}
       </AnimatePresence>

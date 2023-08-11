@@ -3,13 +3,12 @@
   padding: 18px 40px;
   width: max-content;
   border-radius: 10px;
-  color: var(--secondary-color);
-  text-decoration: none;
   font-weight: 600;
   font-size: 18px;
+  color: var(--secondary-color);
+  font-family: var(--font-inter);
+  transform-origin: top;
 }
-.button:hover {
-  background-color: var(--secondary-color);
-  color: #fff;
-  transition: 0.5s all ease;
+.link {
+  text-decoration: none;
 }
